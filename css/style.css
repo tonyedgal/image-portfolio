@@ -1,0 +1,144 @@
+/* Color variables */
+:root {
+  --dark: #25272c;
+  --white: #ffffff;
+  --gray: hsla(0, 0%, 100%, 0.479);
+  --darkicon: rgba(0, 0, 0, 0.35);
+  --darkwhite: #e0e0e0;
+}
+
+body {
+  color: var(--white);
+  background-color: var(--dark);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Assistant", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#landing {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+}
+
+/*Nav bar*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  margin: 0 5%;
+}
+
+.nav--textlogo {
+  display: flex;
+  padding: 0.1rem 0.75rem;
+  cursor: pointer;
+  align-items: center;
+}
+
+.logo img {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+}
+
+.nav--text {
+  font-size: 1.5rem;
+  font-family: "Style Script", sans-serif;
+  font-style: italic;
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav ul li a {
+  margin: 2.5rem;
+  font-family: "Assistant", sans-serif;
+  color: var(--white);
+  font-size: 1rem;
+}
+
+.toggle {
+  display: none;
+}
+
+.text {
+  position: absolute;
+  left: 10%;
+  top: 40%;
+  transform: translate(-10%, -40%);
+}
+
+.text--p__1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: var(--white);
+}
+
+.text--p__2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: var(--white);
+}
+
+.text--p__3 {
+  font-family: "Oxygen", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--gray);
+}
+
+.text--btn {
+  color: var(--gray);
+  width: 8rem;
+  height: 3rem;
+  font-family: "Oxygen", sans-serif;
+  font-size: 1rem;
+  margin: 1.2rem 1rem 0 0;
+  cursor: pointer;
+  border: 1px;
+  background-color: var(--dark);
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #0f1012, -5px -5px 10px #3b3e46;
+}
+
+.text--btn:active {
+  transform: scale(1.1);
+}
+
+.social {
+  display: flex;
+  margin: 0 5%;
+  bottom: 0px;
+}
+
+.social a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 10px;
+  border-radius: 10px;
+  background: var(--dark);
+  box-shadow: -5px -5px 20px #0f1012, 5px 5px 20px #3b3e46;
+}
+
+.social i {
+  color: var(--gray);
+}

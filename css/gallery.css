@@ -1,0 +1,174 @@
+:root {
+  --dark: #25272c;
+  --white: #ffffff;
+  --gray: hsla(0, 0%, 100%, 0.479);
+  --darkicon: rgba(0, 0, 0, 0.35);
+  --darkwhite: #e0e0e0;
+}
+
+body {
+  color: var(--white);
+  background-color: var(--dark);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Assistant", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Nav bar*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  margin: 0 5%;
+}
+
+.nav--textlogo {
+  display: flex;
+  padding: 0.1rem 0.75rem;
+  cursor: pointer;
+  align-items: center;
+}
+
+.logo img {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+}
+
+.nav--text {
+  font-size: 1.5rem;
+  font-family: "Style Script", sans-serif;
+  font-style: italic;
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav ul li a {
+  margin: 2.5rem;
+  font-family: "Assistant", sans-serif;
+  color: var(--white);
+  font-size: 1rem;
+}
+
+.toggle {
+  display: none;
+}
+
+.slider {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+.landing-section {
+  position: relative;
+}
+
+.landing {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+}
+
+.landing--h {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: var(--white);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.landing--btn {
+  color: var(--gray);
+  width: 8rem;
+  height: 3rem;
+  font-family: "Oxygen", sans-serif;
+  font-size: 1rem;
+  margin: auto 1rem;
+  cursor: pointer;
+  border: 1px;
+  background-color: var(--dark);
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #0f1012, -5px -5px 10px #3b3e46;
+  text-align: center;
+}
+
+.image--section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img {
+  height: 75%;
+}
+
+@media (max-width: 750px) {
+  nav ul {
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    display: none;
+  }
+
+  nav ul li {
+    padding: 10px;
+  }
+
+  nav ul li a {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+
+  .toggle {
+    display: block;
+  }
+
+  .toggle:before {
+    content: "\f0c9";
+    font-family: fontAwesome;
+    line-height: 1.8rem;
+    z-index: 1;
+  }
+
+  .toggle.active:before {
+    content: "\f00d";
+    position: fixed;
+    right: 25px;
+    line-height: 0px;
+  }
+  nav.active ul {
+    display: flex !important;
+  }
+}
