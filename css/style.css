@@ -78,8 +78,8 @@ nav ul li a {
 .text {
   position: absolute;
   left: 10%;
-  top: 40%;
-  transform: translate(-10%, -40%);
+  top: 50%;
+  transform: translate(-10%, -50%);
 }
 
 .text--p__1 {
@@ -144,6 +144,20 @@ nav ul li a {
 }
 
 @media (max-width: 750px) {
+  .text {
+    left: 25%;
+    top: 40%;
+    transform: translate(-25%, -40%);
+  }
+  .text--p__1,
+  .text--p__2 {
+    font-size: 1.5rem;
+  }
+
+  .text--p__3 {
+    font-size: 0.75rem;
+  }
+
   nav ul {
     margin: 0;
     padding: 0;
@@ -159,6 +173,7 @@ nav ul li a {
     align-items: center;
     z-index: 1;
     display: none;
+    background-color: var(--dark);
   }
 
   nav ul li {

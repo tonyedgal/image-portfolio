@@ -170,6 +170,7 @@ nav ul li a {
     align-items: center;
     z-index: 1;
     display: none;
+    background-color: var(--dark);
   }
 
   nav ul li {
